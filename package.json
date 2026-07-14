@@ -2,7 +2,7 @@
   "name": "port-simulator",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://YOUR_USERNAME.github.io/Port-Terminal-Simulator-Queueing",
+  "homepage": "https://RafaPieper.github.io/Port-Terminal-Simulator-Queueing",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
