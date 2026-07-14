@@ -163,9 +163,6 @@ const TerminalIllustration = ({ berths, craneIntensity, throughput, consignment 
         <h3 className="text-sm font-semibold text-slate-700 flex items-center gap-2">
           <Anchor size={16} className="text-blue-500" /> Terminal Top-Down View
         </h3>
-        <span className="text-xs font-medium px-2 py-1 bg-white border border-slate-200 rounded-md text-slate-500">
-          Yard Fill: {(fillRatio * 100).toFixed(0)}%
-        </span>
       </div>
       <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-auto bg-[#e2e8f0]">
          {/* Sea Environment */}
