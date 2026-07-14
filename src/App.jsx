@@ -195,7 +195,7 @@ const TerminalIllustration = ({ berths, craneIntensity, throughput, consignment 
               )}
               
               {/* Berth Label */}
-              <text x={startX + berthWidth / 2} y={quayY + 30} fontSize="12" fill="#94a3b8" textAnchor="middle" fontWeight="bold">
+              <text x={startX + berthWidth / 2} y={quayY + 40} fontSize="12" fill="#94a3b8" textAnchor="middle" fontWeight="bold">
                 BERTH {bIdx + 1}
               </text>
 
@@ -247,7 +247,7 @@ const TerminalIllustration = ({ berths, craneIntensity, throughput, consignment 
                 
                 {/* Bow Details (Helipad or Mooring deck) */}
                 <circle cx={shipWidth - 15} cy="20" r="6" fill="#64748b" />
-                <circle cx={shipWidth - 15} cy="20" r="3" fill="none" stroke="#94a3b8" strokeWidth="1" />
+                <circle cx={shipWidth - 15} cy="20" r="3" fill="none" stroke="#dbdfe4" strokeWidth="1" />
               </g>
 
               {/* STS Cranes */}
@@ -288,8 +288,8 @@ const TerminalIllustration = ({ berths, craneIntensity, throughput, consignment 
 
                     {/* Trolley (Moves along boom over the ship's containers) */}
                     <g transform={`translate(0, -28)`}>
-                      <rect x="-5" y="-3" width="10" height="6" fill="#1e293b" rx="1" />
-                      <rect x="-2" y="-1" width="4" height="2" fill="#ef4444" /> {/* Spreader/Hook */}
+                      <rect x="-6" y="-3" width="12" height="6" fill="#1e293b" rx="1" />
+                      <rect x="-2" y="-2" width="4" height="4" fill="#ef4444" /> {/* Spreader/Hook */}
                     </g>
                   </g>
                 );
