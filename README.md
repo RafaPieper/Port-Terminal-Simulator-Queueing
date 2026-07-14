@@ -1,16 +1,22 @@
-# React + Vite
+# ⚓ Port Terminal Queueing Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive, web-based dashboard for container terminal queueing analysis. This application uses the **M/M/c Queuing Theory** model to simulate port capacity, berth utilization, and terminal efficiency based on dynamic user inputs. 
 
-Currently, two official plugins are available:
+Based on the concepts from the paper: [Teoria das Filas no Planejamento Portuário: Um Estudo de Caso com o Terminal de Contêineres de Salvador](https://www.researchgate.net/publication/398773609_TEORIA_DAS_FILAS_NO_PLANEJAMENTO_PORTUARIO_um_estudo_de_caso_com_o_terminal_de_conteineres_de_Salvador)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
+**[View the Live Simulator Here](https://RafaPieper.github.io/Port-Terminal-Simulator-Queueing/)**
 
-## React Compiler
+## ✨ Features
+* **Real-time Parameter Adjustment:** Interactive sliders to modify:
+  * Expected Throughput (Units/yr)
+  * Consignment (Units/Ship)
+  * Number of Berths (c)
+  * Crane Intensity (per Berth)
+  * STS (Ship-to-Shore) Productivity (moves/hr)
+* **Visual Terminal Top-Down View:** Dynamic graphical representation of the port, updating instantly as you adjust the number of berths or container volume.
+* **Instant Calculations:** Automatically calculates and displays terminal metrics and Yard Fill percentage.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Created by Rafael Pieper
